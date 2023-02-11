@@ -1,0 +1,39 @@
+.hero{
+    background: rgba(0, 0, 0, 0.7) url('../media/images/bg.gif');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+}
+.course-text{
+    animation: fade 2s infinite;
+}
+
+.text2{
+    border-right: 2px solid black;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50%{
+        border-right: none;
+    }
+}
+@keyframes fade {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 430px) {
+    .nav-button{
+        display: none !important;
+    }
+}
